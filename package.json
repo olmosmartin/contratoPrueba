@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/olmosmartin/contratoPrueba#readme",
   "dependencies": {
+    "@truffle/contract": "^4.3.42",
     "lite-server": "^2.6.1"
   }
 }
