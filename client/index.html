@@ -16,28 +16,28 @@
                     <h1>Aplicación</h1>
                     <h6 class="text-muted">tasks apps</h6>
                     <span>Wallet</span>
-                    <span>123456789</span>
+                    <span id="account"></span>
                 </div>
 
-                <form class="card card-body rounded-0 mb-4 bg-dark">
+                <form class="card card-body rounded-0 mb-4 bg-dark" id="formulario">
                     <h4>Guardar una tarea</h4>
 
-                    <input type="text" class="form-control" placeholder="escribir una tarea">
+                    <input type="text" name="titulo" class="form-control" placeholder="escribir una tarea">
                     
-                    <textarea rows="2" class="form-control mt-4" placeholder="escribir una descripción"></textarea>
+                    <textarea rows="2" name="descripcion" class="form-control mt-4" placeholder="escribir una descripción"></textarea>
                     <button class="btn btn-primary mt-4">Guardar</button>
                 </form>
 
             </div>
             <div class="col-md-8">
-                <div class="card bg-dark">
-                    <p>tareas</p>
+                <div id="tasksList" class="card bg-dark">
                 </div>
             </div>
         </div>
     </div>
     <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
     <script src="app.js"></script>
+    <script src="ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
